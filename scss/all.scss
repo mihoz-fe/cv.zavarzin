@@ -1,0 +1,23 @@
+@import "reset";
+
+$textColor: #ddd; 
+
+body {
+	max-width: 100%;
+	box-sizing: border-box;
+	background: url(../images/bg_code.jpg) center 0 no-repeat;
+	min-height: 100%;
+}
+
+// .wraper {
+// 	min-width: 1200px;
+// 	margin: 0 auto;
+// }
+
+.name {
+	margin-top: 40px;
+	font-size: 30px;
+	line-height: 34px;
+	color: $textColor;
+	text-align: center;
+}
