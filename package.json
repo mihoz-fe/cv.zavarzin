@@ -1,0 +1,25 @@
+{
+  "name": "cv.zavarzin",
+  "version": "1.0.0",
+  "description": "my cv site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihoz-fe/cv.zavarzin.git"
+  },
+  "keywords": [
+    "miha629540"
+  ],
+  "author": "Mikhail Zavarzin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihoz-fe/cv.zavarzin/issues"
+  },
+  "homepage": "https://github.com/mihoz-fe/cv.zavarzin#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
