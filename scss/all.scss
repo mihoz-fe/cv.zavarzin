@@ -1,23 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Jura');
+
 @import "reset";
 
-$textColor: #ddd; 
+$textColor: #696f6f; 
+$BlocksBackground: rgba(105, 111, 111, 0.10);
+
+html, body {
+	max-width: 100%;
+}
 
 body {
-	max-width: 100%;
+	font-family: 'Jura', sans-serif;
+	font-size: 18px;
+	line-height: 22px;
 	box-sizing: border-box;
 	background: url(../images/bg_code.jpg) center 0 no-repeat;
 	min-height: 100%;
 }
 
-// .wraper {
-// 	min-width: 1200px;
-// 	margin: 0 auto;
-// }
+.clearfix:after {
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+.pull_right {
+	float: right
+}
+
+.pull_left {
+	float: left;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 25px
+}
+.header {
+	background: $BlocksBackground;
+	.vision {
+		border: 2px solid $textColor;
+		margin-right: 20px; 
+	}
+}
+
+.vision {
+	img {
+		vertical-align: top;
+	}
+}
 
 .name {
-	margin-top: 40px;
+	margin: 40px 0 15px 0;
 	font-size: 30px;
+	font-weight: 500;
 	line-height: 34px;
 	color: $textColor;
-	text-align: center;
+	text-align: left;
+
+}
+
+.profession {
+	font-size: 24px;
+	line-height: 28px;
+	text-align: left;
+	color: $textColor;
 }
