@@ -27,11 +27,11 @@ body {
 	clear: both;
 }
 
-.pull_right {
+.pull-right {
 	float: right
 }
 
-.pull_left {
+.pull-left {
 	float: left;
 }
 
@@ -41,20 +41,19 @@ body {
 	padding: 0 25px
 }
 .header {
+	position: relative;
 	margin:40px 0 15px;
 	padding: 15px 0;
 	background: $BlocksBackground;
 	.vision {
 		border: 2px solid $titleTextColor;
-		margin-right: 20px; 
+		margin-right: 20px;
+		img {
+			vertical-align: top;
+		} 
 	}
 }
 
-.vision {
-	img {
-		vertical-align: top;
-	}
-}
 
 .name, .profession {
 	color: $titleTextColor;
@@ -77,4 +76,53 @@ body {
 .intro {
 	display: inline-block;
 	width: 45%;
+}
+
+.main-nav {
+	position: absolute;
+	top: 126px;
+	right: 0;
+	li {
+		// width: 40px;
+		height: 24px;
+		margin-bottom: 24px;
+		a {
+			border: 1px solid $titleTextColor;
+			border-right: none;
+			right: 50%;
+			position: absolute;
+			display: block;
+			text-decoration: none;
+			color: inherit;
+			width: 40px;
+			transition: width 250ms ease-Out;
+			
+			.drop-nav {
+				text-shadow: 0 0 2px rgba(124,117,117,0.25),
+							 0 0 3px rgba(124,117,117,0.11),
+							 0 0 4px rgba(124,117,117,0.06),
+							 0 0 5px rgba(124,117,117,0.04);
+				margin-left: 5px;
+				opacity: 0;
+
+			}
+		}
+	}
+
+	a:hover {
+		width: 200px;
+		-webkit-box-shadow: 0 0 2px 0 rgba(124,117,117,0.25),
+							0 0 3px 0 rgba(124,117,117,0.11),
+							0 0 4px 0 rgba(124,117,117,0.06),
+							0 0 5px 0 rgba(124,117,117,0.04);
+		box-shadow: 0 0 2px 0 rgba(124,117,117,0.25),
+					0 0 3px 0 rgba(124,117,117,0.11),
+					0 0 4px 0 rgba(124,117,117,0.06),
+					0 0 5px 0 rgba(124,117,117,0.04);
+
+	}
+	a:hover .drop-nav {
+		opacity: 1;	
+	}
+	
 }
