@@ -39,16 +39,22 @@ body {
 .wrapper {
 	min-height: 100%;
 	padding-top: 40px;
+	padding-bottom: 82px;
 	box-sizing: border-box;
 }
 
 @import "header";
 
-.contacts {
+.section {
 	display: inline-block;
 	background: $blocksBackground;
-	padding: 15px;
-	margin-right: 15px;
+	padding: 25px;
+	margin-bottom: 25px;
+}
+
+.contacts {
+	margin-left: 3%;
+	margin-right: 3%;
 	td {
 		padding: 5px 15px;
 		line-height: 30px;
@@ -67,7 +73,20 @@ body {
 	text-transform: uppercase;
 	text-shadow: 1px 1px 0 $textShadow;
 	margin-bottom: 5px;
+	padding-top: 5px;
 	border-bottom: 1px solid $blocksBackground;
+}
+
+.col1 {
+	text-align: end;
+}
+
+.objective {
+	display: block;
+	p {
+		text-align: center;
+		margin-top: 18px;
+	}
 }
 
 @import "footer";
