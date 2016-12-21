@@ -14,7 +14,7 @@ html, body {
 body {
 	max-width: 100%;
 	font-family: 'Jura', sans-serif;
-	font-size: 20px;
+	font-size: 19px;
 	line-height: 24px;
 	color: $textColor;
 	box-sizing: border-box;
@@ -43,27 +43,36 @@ body {
 	box-sizing: border-box;
 }
 
+.holder {
+	max-width: 1200px;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 0 50px
+}
+
 @import "header";
 
 .section {
 	display: inline-block;
 	background: $blocksBackground;
-	padding: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	margin-bottom: 25px;
 }
 
 .contacts {
 	margin-left: 3%;
 	margin-right: 3%;
-	td {
-		padding: 5px 15px;
-		line-height: 30px;
-	}
 	a {
 		text-decoration: none;
 		color: inherit;
 		line-height: 30px;
 	}
+}
+
+td {
+	padding: 5px 15px;
+	line-height: 30px;
 }
 
 .section-title {
@@ -88,5 +97,36 @@ body {
 		margin-top: 18px;
 	}
 }
+
+.workexp {
+	padding-left: 50px;
+	padding-right: 50px;
+	&>span {
+		margin-left: 15px;
+	}
+}
+
+.duties {
+	h4 {
+		font-size: 20px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+.duties-list {
+	margin-left: 15px;
+	list-style-type: disc;
+	li {
+		display: list-item;
+	}
+}
+
+.education {
+	span{
+		margin-bottom: 10px;
+	}
+	
+}
+	
 
 @import "footer";
