@@ -1,7 +1,9 @@
+$BlocksBackground: rgba(105, 111, 111, 0.10);
+
 .footer {
 	padding: 15px 0;
 	margin-top: -80px;
-	background: $blocksBackground;
+	background: $BlocksBackground;
 	.copyright, .developers {
 		margin-top: 5px;
 		font-size: 18px;

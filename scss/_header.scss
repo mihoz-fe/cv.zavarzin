@@ -1,15 +1,17 @@
+$BlocksBackground: rgba(105, 111, 111, 0.10);
+
 .header-holder {
 	max-width: 1200px;
 	min-height: 100%;
 	margin: 0 auto;
-	padding: 0 25px
+	padding: 0 50px
 }
 
 .header {
 	position: relative;
 	margin-bottom: 15px;
 	padding: 15px 0;
-	background: $blocksBackground;
+	background: $BlocksBackground;
 	.vision {
 		border: 2px solid $titleTextColor;
 		margin-right: 20px;
