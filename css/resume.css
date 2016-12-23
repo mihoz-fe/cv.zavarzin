@@ -76,13 +76,6 @@ body {
 
 .holder {
   max-width: 1200px;
-  min-height: 100%;
-  margin: 0 auto;
-  padding: 0 50px; }
-
-.header-holder {
-  max-width: 1200px;
-  min-height: 100%;
   margin: 0 auto;
   padding: 0 50px; }
 
@@ -96,6 +89,11 @@ body {
     margin-right: 20px; }
     .header .vision img {
       vertical-align: top; }
+
+.holder {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px; }
 
 .name, .profession {
   color: #828989;
