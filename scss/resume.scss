@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Jura');
+@import url('https://fonts.googleapis.com/css?family=Jura:400,500,600&subset=cyrillic');
 
 @import "reset";
 
@@ -121,12 +121,32 @@ td {
 	}
 }
 
-.education {
-	span{
-		margin-bottom: 10px;
+.education, .add-aducation {
+	a {
+		text-decoration: none;
+		color: inherit;
+		span:first-child {
+			line-height: 34px;
+			font-size: 21px;
+		}
 	}
-	
 }
-	
+
+.center {
+	text-align: center;
+}
+
+.add-aducation {
+	text-align: left;
+	a {
+		span:first-child {
+			text-transform: uppercase;
+		}
+	}
+}
+
+.pers-qual {
+	margin-bottom: 40px;
+}
 
 @import "footer";

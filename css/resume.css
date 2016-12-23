@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Jura");
+@import url("https://fonts.googleapis.com/css?family=Jura:400,500,600&subset=cyrillic");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, cite, code,
@@ -201,8 +201,23 @@ td {
   .duties-list li {
     display: list-item; }
 
-.education span {
-  margin-bottom: 10px; }
+.education a, .add-aducation a {
+  text-decoration: none;
+  color: inherit; }
+  .education a span:first-child, .add-aducation a span:first-child {
+    line-height: 34px;
+    font-size: 21px; }
+
+.center {
+  text-align: center; }
+
+.add-aducation {
+  text-align: left; }
+  .add-aducation a span:first-child {
+    text-transform: uppercase; }
+
+.pers-qual {
+  margin-bottom: 40px; }
 
 .footer {
   padding: 15px 0;
