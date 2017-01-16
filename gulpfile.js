@@ -61,13 +61,13 @@ gulp.task('img', function() {
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		})))
-		.pipe(gulp.dest('dist/img'));
+		.pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ 
-		'css/all.css',
+		'css/*.css',
 		'css/libs.min.css'
 		])
 	.pipe(gulp.dest('dist/css'))
