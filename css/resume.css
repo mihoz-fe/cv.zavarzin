@@ -149,24 +149,29 @@ body {
   width: 50px;
   background: none;
   border: none;
-  outline: none; }
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: inherit; }
   .btn-page-nav:active, .btn-page-nav:focus {
     outline: none; }
   .btn-page-nav:hover {
     cursor: pointer; }
   .btn-page-nav:hover .stripe {
-    background: #7c7575;
-    -webkit-box-shadow: 0 0 3px #7c7575, 0 0 5px rgba(124, 117, 117, 0.5), 0 0 7px rgba(124, 117, 117, 0.3);
-            box-shadow: 0 0 3px #7c7575, 0 0 5px rgba(124, 117, 117, 0.5), 0 0 7px rgba(124, 117, 117, 0.3); }
+    background: #696f6f;
+    -webkit-box-shadow: 0 0 2px rgba(233, 235, 235, 0.25), 0 0 3px rgba(233, 235, 235, 0.11), 0 0 4px rgba(233, 235, 235, 0.06), 0 0 5px rgba(233, 235, 235, 0.04);
+            box-shadow: 0 0 2px rgba(233, 235, 235, 0.25), 0 0 3px rgba(233, 235, 235, 0.11), 0 0 4px rgba(233, 235, 235, 0.06), 0 0 5px rgba(233, 235, 235, 0.04); }
   .btn-page-nav:hover .page-nav {
-    width: 300px; }
+    visibility: visible;
+    opacity: 1;
+    width: 250px; }
 
 .stripe {
   margin: 0 auto;
   width: 28px;
   height: 5px;
   margin-bottom: 5px;
-  background: rgba(124, 117, 117, 0.8); }
+  background: rgba(105, 111, 111, 0.8); }
   .stripe:last-child {
     margin-bottom: 0; }
 
@@ -175,16 +180,25 @@ body {
           box-sizing: border-box;
   width: 0;
   overflow: hidden;
+  white-space: nowrap;
   display: inline-block;
   text-align: right;
   position: absolute;
   right: 50px;
   top: 10px;
   background: rgba(105, 111, 111, 0.1);
-  padding: 15px; }
+  padding: 15px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: width 250ms ease-Out;
+  transition: width 250ms ease-Out; }
   .page-nav a {
     text-decoration: none;
-    color: inherit; }
+    color: inherit;
+    opacity: 0.8; }
+    .page-nav a:hover {
+      text-shadow: 0 0 2px rgba(233, 235, 235, 0.25), 0 0 3px rgba(233, 235, 235, 0.11), 0 0 4px rgba(233, 235, 235, 0.06), 0 0 5px rgba(233, 235, 235, 0.04);
+      opacity: 1; }
 
 .btn-page-nav:hover .page-nav {
   width: 300px; }
