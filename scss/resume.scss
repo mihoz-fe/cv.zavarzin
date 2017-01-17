@@ -51,6 +51,62 @@ body {
 
 @import "header";
 
+.btn-page-nav {	
+	width: 50px;
+	background: none;
+  	border: none;
+  	outline: none;
+  	&:active,
+  	&:focus {
+    outline: none;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+	&:hover .stripe {
+		background: rgba(124,117,117,1);
+		box-shadow: 0 0 3px rgba(124,117,117,1),
+					0 0 5px rgba(124,117,117,0.5),
+					0 0 7px rgba(124,117,117,0.3);
+	}
+	&:hover .page-nav {
+		width: 300px;
+	}
+}
+
+.stripe {
+	margin: 0 auto;
+	width: 28px;
+	height: 5px;
+	margin-bottom: 5px;
+	background: rgba(124,117,117,0.8);
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.page-nav {
+	box-sizing: border-box;
+	width: 0;
+	overflow: hidden;
+	display: inline-block;
+	text-align: right;
+	position: absolute;
+	right: 50px;
+	top: 10px;
+	background: $blocksBackground;
+	padding: 15px;
+	a {
+		text-decoration: none;
+		color: inherit;
+
+	}
+}
+
+.btn-page-nav:hover .page-nav {
+		width: 300px;
+	}
+
 .section {
 	display: inline-block;
 	background: $blocksBackground;

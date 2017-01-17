@@ -91,7 +91,8 @@ body {
 .name, .profession {
   color: #828989;
   text-align: left;
-  text-shadow: 1px 1px #131414; }
+  text-shadow: 1px 1px #131414;
+  display: inline-block; }
 
 .name {
   margin-bottom: 15px;
