@@ -17,7 +17,6 @@ body {
 	line-height: 24px;
 	color: $textColor;
 	box-sizing: border-box;
-	background: url(../images/bg_code.jpg) center 0;
 }
 
 .clearfix:after {
@@ -39,14 +38,37 @@ body {
 	padding-top: 40px;
 	min-height: 100%;
 	box-sizing: border-box;
+	padding-bottom: 82px;
+	background: url(../images/old_monitor.png) center 0 repeat-y;
+}
+
+.overlay { 
+	display: block; 
+	width: 100%; 
+	height: 100%; 
+}
+
+#background-video {
+	position: fixed;
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0;
+	overflow: hidden;
+	&>video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
 
 @import "header";
 
 .intro {
 	display: inline-block;
-	width: calc(100% - 435px);
-	max-width: 800px;
+	max-width: calc(100% - 350px);
 }
 
 @import "footer";
