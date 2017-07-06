@@ -1,0 +1,27 @@
+@import "reset";
+
+@font-face {
+    font-family: "TypewriterRegular";
+    src: url("../fonts/TypewriterRegular/TypewriterRegular.eot");
+    src: url("../fonts/TypewriterRegular/TypewriterRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/TypewriterRegular/TypewriterRegular.woff") format("woff"),
+    url("../fonts/TypewriterRegular/TypewriterRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+	font-family: 'TypewriterRegular', 'Times', serif
+}
+
+.container {
+	width: 804px;
+	margin: 0 auto;
+}
+#flipbook{
+	margin-left: 150px;
+	margin-top: 50px;
+	& .page{
+	background: url(../images/_paper_textures_06.jpg) 0 0 no-repeat
+	}
+}
