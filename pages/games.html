@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zavarzin CV</title>
+	<link rel="stylesheet" type="text/css" href="../css/games.css">
+
+	<script src="../js/libs.min.js" defer=""></script>
+	<script src="../js/puzzles.js"></script>
+	<script src="../js/main.js" defer=""></script>
+</head>
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<h1>игры</h1>
+			<span>Здесь вы можете поиграть в элементарные игры, написанные мной на JavaScript</span>
+
+			<nav class="main-nav">
+				<ul>
+					<li>
+						<a href="../index.html"><div class="drop-nav">главная</div></a>	
+					</li>
+					<li>
+						<a href="resume.html"><div class="drop-nav">резюме</div></a>
+					</li>
+					<li>
+						<a href="biography.html"><div class="drop-nav">биография</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="drop-nav">документы</div></a>
+					</li>
+					<li>
+						<a href="games.html"><div class="drop-nav">игры</div></a>
+					</li>
+				</ul>
+			</nav>	
+		</header>
+
+<!-- tabs -->
+
+		<div id="tabs">
+			<div class="center">
+				<ul>
+			    <li id="element1" class="pull-left"><a href="#tabs-1" id="tab1">***</a></li>
+			    <li class="pull-left"><a href="#tabs-2" id="tab2">***</a></li>
+			    <li class="pull-left"><a href="#tabs-3" id="tab3">загадки</a></li>
+				</ul>
+			</div>	
+				<div id="tabs-1">
+			  	<h2> </h2>
+				<!-- <div class="box">
+					<div class="guess">
+						<p class="description">Отгадайте число от 1 до 100</p>
+						<span id="correctAnswer"></span>
+						<input type="text" id="userAnswer">
+						<span id="wrongAnswer">ты где?</span>
+						<a href="#" id="start" class="btn-go">поехали</a>
+						<a href="#" id="sendnumder" class="btn-go">попробуем</a>
+					</div>
+				</div> -->
+				</div>
+				<div id="tabs-2">
+					<h2> </h2>
+				    
+				</div>
+				<div id="tabs-3">
+			    <h2>загадки</h2>
+			    <div class="box">
+                	<div class="puzzles">
+                		<p class="description">Отгадайте три загадки</p>
+                    	<span>
+                        Сижу верхом не ведаю на ком?
+                    	</span>
+                    	<input type="text" id="userAnswer1">
+                    	<span>
+                        Ношу их много лет, а счету им не знаю?
+                    	</span>
+                    	<input type="text" id="userAnswer2">
+                    	<span>
+                        Идет то в гору, то с горы, но остается на месте?
+                    	</span>
+                    	<input type="text" id="userAnswer3">
+                    	<a href="#" id="answer" class="btn-answer">ответить</a>
+                	</div>
+                	<div class="count">
+                    	<span>Ваш результат</span>
+                    	<span id="correctAnswers"></span>
+                    	<span> правильных из трёх возможных</span>
+                    	<br>
+                    	<a href="#" id="end" class="btn-finish">закончить</a>
+                	</div>
+                	<a href="#" id="go" class="btn-go">поехали</a> 
+            	</div>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
