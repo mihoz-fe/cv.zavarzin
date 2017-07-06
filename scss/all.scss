@@ -2,9 +2,9 @@
 
 @import "reset";
 
-$titleTextColor: #828989;
-$textColor: #757c7c; 
-$blocksBackground: rgba(105, 111, 111, 0.10);
+$titleTextColor: #BDDDDB;
+$textColor: #FEFBD9; 
+$blocksBackground: #649A96;
 $textShadow: #131414;
 
 html, body {
@@ -17,7 +17,7 @@ body {
 	line-height: 24px;
 	color: $textColor;
 	box-sizing: border-box;
-	background: url(../images/bg_code.jpg) center 0 repeat-y;
+	background: url(../images/bg_code_light.jpg) center 0 repeat-y;
 }
 
 .clearfix:after {
@@ -40,7 +40,7 @@ body {
 	min-height: 100%;
 	box-sizing: border-box;
 	padding-bottom: 82px;
-	background: url(../images/old_monitor.png) center 0 repeat-y;
+	// background: url(../images/old_monitor.png) center 0 repeat-y;
 }
 
 .overlay { 
@@ -70,6 +70,9 @@ body {
 .intro {
 	display: inline-block;
 	max-width: calc(100% - 350px);
+	p {
+		color: #80629F;
+	}
 }
 
 @import "footer";

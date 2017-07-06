@@ -49,10 +49,10 @@ body {
   font-family: 'Jura', sans-serif;
   font-size: 20px;
   line-height: 24px;
-  color: #757c7c;
+  color: #FEFBD9;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../images/bg_code.jpg) center 0 repeat-y; }
+  background: url(../images/bg_code_light.jpg) center 0 repeat-y; }
 
 .clearfix:after {
   content: '';
@@ -71,8 +71,7 @@ body {
   min-height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-bottom: 82px;
-  background: url(../images/old_monitor.png) center 0 repeat-y; }
+  padding-bottom: 82px; }
 
 .overlay {
   display: block;
@@ -97,7 +96,7 @@ body {
   position: relative;
   margin-bottom: 15px; }
   .header .vision {
-    border: 2px solid #828989;
+    border: 2px solid #BDDDDB;
     margin-right: 20px; }
     .header .vision img {
       vertical-align: top; }
@@ -106,10 +105,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 50px 15px;
-  background: rgba(105, 111, 111, 0.1); }
+  background: #649A96; }
 
 .name, .profession {
-  color: #828989;
+  color: #BDDDDB;
   text-align: left;
   text-shadow: 1px 1px #131414;
   display: inline-block; }
@@ -137,13 +136,15 @@ body {
       margin-bottom: 28px;
       padding: 0 3%; }
       .main-nav ul li a {
-        border: 1px solid #828989;
+        border: 1px solid #80629F;
         display: block;
         padding: 3px 7px;
         text-decoration: none;
-        color: inherit; }
+        color: inherit;
+        background: #9b6569;
+        color: #FEFBD9; }
   .main-nav a:hover {
-    border: 1px solid #fff;
+    border: 1px solid #FEFBD9;
     -webkit-box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.9), 0 0 3px 0 rgba(255, 255, 255, 0.8), 0 0 4px 0 rgba(255, 255, 255, 0.4), 0 0 5px 0 rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.9), 0 0 3px 0 rgba(255, 255, 255, 0.8), 0 0 4px 0 rgba(255, 255, 255, 0.4), 0 0 5px 0 rgba(255, 255, 255, 0.2);
     -webkit-text-shadow: 0 0 1px rgba(255, 255, 255, 0.8), 0 0 2px rgba(255, 255, 255, 0.6), 0 0 3px rgba(255, 255, 255, 0.3), 0 0 4px rgba(255, 255, 255, 0.1);
@@ -154,11 +155,13 @@ body {
   display: inline-block;
   max-width: -webkit-calc(100% - 350px);
   max-width: calc(100% - 350px); }
+  .intro p {
+    color: #80629F; }
 
 .footer {
   padding: 15px 0;
   margin-top: -60px;
-  background: rgba(105, 111, 111, 0.1); }
+  background: #649A96; }
   .footer .copyright, .footer .developers {
     margin-top: 5px;
     font-size: 18px;
@@ -182,4 +185,4 @@ body {
         display: block;
         width: 40px;
         height: 28px;
-        border: 1px solid #828989; }
+        border: 1px solid #BDDDDB; }
